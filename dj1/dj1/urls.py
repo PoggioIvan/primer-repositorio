@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
@@ -29,5 +30,7 @@ urlpatterns=[
     path("nacimiento/<edad>", calcular_anio_nacimiento),
     path("hola/<nombre>", saludo_pro),
     path("template1/",template1),
-    path("template2/", template2)
+    path("template2/", template2),
+    path("", inicio),
+    
 ]

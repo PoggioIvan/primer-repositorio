@@ -26,14 +26,6 @@ def template1(self):
     documento= plantilla.render(micontexto)
     return HttpResponse(documento)
 
-'''def template2(self):
-    mihtml1= open(r"C:\Users\Usuario\Desktop\python\APUNTES\VSC\django1\dj1\plantillas\template2.html")
-    plantilla1= Template(mihtml1.read())
-    mihtml1.close()
-    micontexto= Context()
-    documento= plantilla1.render(micontexto)
-    return HttpResponse(documento)'''
-
 """segunda forma de hacer un template"""
 def template2(self):
     diccionario={'nombre':'ivan','apellido':'poggio'}
@@ -41,4 +33,6 @@ def template2(self):
     documento= plantilla1.render(diccionario)
     return HttpResponse(documento)
 
+def inicio(request):
+    return HttpResponse ("este es el inicio de mi pagina")
 
